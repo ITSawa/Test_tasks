@@ -102,7 +102,6 @@ main {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #f8f9fa;
   margin: 0;
   padding: 0;
 }
