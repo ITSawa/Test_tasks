@@ -4,7 +4,7 @@
       <div class="toDoList">
         <ul>
           <li v-if="toDoItems.length === 0" class="noTasks">
-            <span>Скорее запланируй что-то!</span>
+            <span>Plan something quickly!</span>
           </li>
           <li v-for="(item, index) in toDoItems" :key="index" :class="{ completed: item.completed }" class="toDoItem">
             <span style="max-width: calc(100% - 60px);">{{ item.text }}</span>
@@ -23,8 +23,8 @@
         </ul>
       </div>
       <div class="toDoCreater">
-        <textarea v-model="newToDo" placeholder="Сделать что-то..." class="inputField"></textarea>
-        <button @click="addToDo" class="addButton" :disabled="!newToDo.trim()">Добавить</button>
+        <textarea v-model="newToDo" placeholder="Do something..." class="inputField"></textarea>
+        <button @click="addToDo" class="addButton" :disabled="!newToDo.trim()">Add</button>
       </div>
     </div>
   </main>
