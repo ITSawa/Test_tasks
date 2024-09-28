@@ -36,9 +36,6 @@ import '@fortawesome/fontawesome-free/css/all.css';
 
 export default {
   name: 'MainPage',
-  props: {
-    msg: String
-  },
   setup() {
     const newToDo = ref('');
     const toDoItems = ref([]);
