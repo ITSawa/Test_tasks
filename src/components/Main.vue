@@ -7,7 +7,7 @@
             <span>Скорее запланируй что-то!</span>
           </li>
           <li v-for="(item, index) in toDoItems" :key="index" :class="{ completed: item.completed }" class="toDoItem">
-            <span>{{ item.text }}</span>
+            <span style="max-width: calc(100% - 60px);">{{ item.text }}</span>
             <div class="buttonGroup">
               <button @click="toggleComplete(index)">
                 <i class="fas fa-check"></i>
@@ -132,10 +132,11 @@ ul {
 }
 
 .toDoItem {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 15px;
+  padding: 15px 20px;
   margin-bottom: 10px;
   border-radius: 10px;
   background-color: #ffa963;
@@ -166,6 +167,9 @@ ul {
 }
 
 .buttonGroup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
   display: flex;
   gap: 5px;
 }
@@ -210,7 +214,6 @@ button:hover {
 .addButton:hover {
   background-color: #ff7f00;
 }
-
 
 .addButton:disabled {
   background-color: #ccc;
