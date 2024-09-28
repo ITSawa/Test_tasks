@@ -178,14 +178,14 @@ button {
   padding: 6px 10px;
   border: none;
   border-radius: 5px;
-  background-color: #ff8c00;
-  color: white;
+  background-color: #ffffff;
+  color: rgb(34, 34, 34);
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #ff7f00;
+  background-color: #ebeaea;
 }
 
 .toDoCreater {
@@ -208,7 +208,13 @@ button:hover {
   border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s;
+  background-color: #ff8c00;
 }
+
+.addButton:hover {
+  background-color: #ff7f00;
+}
+
 
 .addButton:disabled {
   background-color: #ccc;
